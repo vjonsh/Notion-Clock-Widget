@@ -1,0 +1,73 @@
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    transition: background-color 0.3s;
+}
+
+.clock-container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #cfcfcf; /* This is the color seen in your uploaded image */
+    text-align: center;
+}
+
+.date {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #292929;
+}
+
+.time {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #292929;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919;
+    }
+    .clock-container {
+        background-color: #cfcfcf; /* Keeping consistent with your design */
+    }
+    .date, .time {
+        color: #292929;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    }
+    .clock-container {
+        background-color: #cfcfcf; /* Maintaining design */
+    }
+    .date, .time {
+        color: #292929;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 320px) {
+    .clock-container {
+        padding: 10px;
+        max-width: 300px;
+    }
+    .date {
+        font-size: 1.2em;
+    }
+    .time {
+        font-size: 2em;
+    }
+}
